@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+git_source(:github){ |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
@@ -54,6 +56,11 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "rspec-rails"
+  gem "brakeman"
+  gem "bundler-audit", require: false
+  gem "pry"
+  gem "bullet"
 end
 
 group :development do
@@ -65,6 +72,16 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem "letter_opener", "~> 1.7"
+  gem "letter_opener_web", "~> 2.0"
+  # Code formatting and best practices
+  gem "rubocop", require: false
+  gem "rubocop-daemon", require: false
+  gem "rubocop-rails", require: false
+  gem "rubocop-rspec", require: false
+  gem "rubocop-performance", require: false
+  gem "rails_best_practices"
+  gem "pre-commit", require: false
 end
 
 group :test do
