@@ -1,0 +1,680 @@
+Started GET "/" for ::1 at 2023-07-19 17:47:07 +0500
+  
+ActiveRecord::NoDatabaseError (We could not find your database: actioncable_learning_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.6) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.6) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.6) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.6) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.6) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.6) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.6) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.6) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.6) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.6) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.6) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.6) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.6) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.6) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for ::1 at 2023-07-19 17:47:11 +0500
+  [1m[35m (252.3ms)[0m  [1m[35mCREATE DATABASE "actioncable_learning_development" ENCODING = 'unicode'[0m
+  [1m[35m (200.9ms)[0m  [1m[35mCREATE DATABASE "actioncable_learning_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2023-07-19 17:47:11 +0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/hamza/.rvm/gems/ruby-3.1.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/hamza/.rvm/gems/ruby-3.1.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.7ms | Allocations: 303)
+Completed 200 OK in 19ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 2868)
+
+
+Started GET "/" for ::1 at 2023-07-19 17:47:20 +0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/hamza/.rvm/gems/ruby-3.1.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/hamza/.rvm/gems/ruby-3.1.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 297)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 1081)
+
+
+Started GET "/" for ::1 at 2023-07-19 17:58:55 +0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/hamza/.rvm/gems/ruby-3.1.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/hamza/.rvm/gems/ruby-3.1.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 16)
+Completed 200 OK in 1ms (Views: 0.6ms | Allocations: 250)
+
+
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (44.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5409131467409376315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateOrders (20230719131524)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5409131467409376315)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5409131467409376315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateOrders (20230719131524)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (44.1ms)[0m  [1m[35mCREATE TABLE "orders" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "state" integer DEFAULT 0, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230719131524"]]
+  [1m[36mTRANSACTION (40.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-07-19 13:17:28.103075"], ["updated_at", "2023-07-19 13:17:28.103075"]]
+  [1m[36mTRANSACTION (40.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(5409131467409376315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (1.0ms)[0m  [1m[32mINSERT INTO "orders" ("state", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["state", 0], ["created_at", "2023-07-19 13:19:21.628224"], ["updated_at", "2023-07-19 13:19:21.628224"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5409131467409376315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateItems (20230719132220)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (45.1ms)[0m  [1m[35mCREATE TABLE "items" ("id" bigserial primary key, "name" character varying, "size" character varying, "order_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_53153f3b4b"
+FOREIGN KEY ("order_id")
+  REFERENCES "orders" ("id")
+)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5409131467409376315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5409131467409376315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateOrders (20230719131524)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (1.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20230719131524"]]
+  [1m[36mTRANSACTION (43.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5409131467409376315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5409131467409376315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateOrders (20230719131524)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "orders" ("id" uuid DEFAULT gen_random_uuid() NOT NULL PRIMARY KEY, "state" integer DEFAULT 0, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230719131524"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateItems (20230719132220)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (42.5ms)[0m  [1m[35mCREATE TABLE "items" ("id" bigserial primary key, "name" character varying, "size" character varying, "order_id" uuid, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230719132220"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5409131467409376315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.7ms)[0m  [1m[32mINSERT INTO "orders" ("state", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["state", 0], ["created_at", "2023-07-19 13:28:20.214974"], ["updated_at", "2023-07-19 13:28:20.214974"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."order_id" = $1[0m  [["order_id", "fadac48c-b482-4684-9282-884b9204916d"]]
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "bag"], ["size", "Large"], ["order_id", "fadac48c-b482-4684-9282-884b9204916d"], ["created_at", "2023-07-19 13:28:51.695171"], ["updated_at", "2023-07-19 13:28:51.695171"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."order_id" = $1[0m  [["order_id", "fadac48c-b482-4684-9282-884b9204916d"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5409131467409376315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePromotions (20230719133358)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (44.2ms)[0m  [1m[35mCREATE TABLE "promotions" ("id" bigserial primary key, "name" character varying, "target" character varying, "target_size" character varying, "from" integer, "to" integer, "order_id" uuid, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230719133358"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5409131467409376315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPromotion Load (41.5ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."order_id" = $1[0m  [["order_id", "fadac48c-b482-4684-9282-884b9204916d"]]
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPromotion Create (1.0ms)[0m  [1m[32mINSERT INTO "promotions" ("name", "target", "target_size", "from", "to", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "lal"], ["target", "sss"], ["target_size", nil], ["from", nil], ["to", nil], ["order_id", "fadac48c-b482-4684-9282-884b9204916d"], ["created_at", "2023-07-19 14:47:41.592815"], ["updated_at", "2023-07-19 14:47:41.592815"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPromotion Load (0.3ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."order_id" = $1[0m  [["order_id", "fadac48c-b482-4684-9282-884b9204916d"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5409131467409376315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateDiscounts (20230719154429)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.8ms)[0m  [1m[35mCREATE TABLE "discounts" ("id" bigserial primary key, "name" character varying, "deduction_in_percent" integer, "order_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_682e92fd5d"
+FOREIGN KEY ("order_id")
+  REFERENCES "orders" ("id")
+)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5409131467409376315)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5409131467409376315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateDiscounts (20230719154429)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (46.6ms)[0m  [1m[35mCREATE TABLE "discounts" ("id" bigserial primary key, "name" character varying, "deduction_in_percent" integer, "order_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_682e92fd5d"
+FOREIGN KEY ("order_id")
+  REFERENCES "orders" ("id")
+)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5409131467409376315)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5409131467409376315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateDiscounts (20230719154429)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (48.2ms)[0m  [1m[35mCREATE TABLE "discounts" ("id" bigserial primary key, "name" character varying, "deduction_in_percent" integer, "order_id" uuid, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230719154429"]]
+  [1m[36mTRANSACTION (39.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5409131467409376315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDiscount Load (0.6ms)[0m  [1m[34mSELECT "discounts".* FROM "discounts" WHERE "discounts"."order_id" = $1[0m  [["order_id", "fadac48c-b482-4684-9282-884b9204916d"]]
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDiscount Create (0.7ms)[0m  [1m[32mINSERT INTO "discounts" ("name", "deduction_in_percent", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "sds"], ["deduction_in_percent", nil], ["order_id", "fadac48c-b482-4684-9282-884b9204916d"], ["created_at", "2023-07-19 15:58:45.862532"], ["updated_at", "2023-07-19 15:58:45.862532"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDiscount Load (0.3ms)[0m  [1m[34mSELECT "discounts".* FROM "discounts" WHERE "discounts"."order_id" = $1[0m  [["order_id", "fadac48c-b482-4684-9282-884b9204916d"]]
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDiscount Load (0.4ms)[0m  [1m[34mSELECT "discounts".* FROM "discounts" WHERE "discounts"."order_id" = $1[0m  [["order_id", "fadac48c-b482-4684-9282-884b9204916d"]]
+Started GET "/" for ::1 at 2023-07-19 21:25:30 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (43.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/hamza/.rvm/gems/ruby-3.1.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/hamza/.rvm/gems/ruby-3.1.2/gems/railties-7.0.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.6ms | Allocations: 529)
+Completed 200 OK in 23ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 4490)
+
+
+  [1m[36mOrder Delete All (1.9ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.6ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:30:46.920066"]]
+  [1m[36mTRANSACTION (40.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (41.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:30:46.990718"], ["updated_at", "2023-07-19 16:30:46.990718"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (1.4ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:32:27.585642"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDiscount Load (0.5ms)[0m  [1m[34mSELECT "discounts".* FROM "discounts" WHERE "discounts"."order_id" = $1[0m  [["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"]]
+  [1m[36mOrder Delete All (1.5ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:33:33.684606"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:33:33.708996"], ["updated_at", "2023-07-19 16:33:33.708996"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOrder Delete All (1.3ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:37:09.961149"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:37:09.985379"], ["updated_at", "2023-07-19 16:37:09.985379"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mOrder Delete All (1.4ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:37:47.095152"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:37:47.118668"], ["updated_at", "2023-07-19 16:37:47.118668"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."order_id" = $1[0m  [["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"]]
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."order_id" = $1[0m  [["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"]]
+  [1m[36mOrder Delete All (1.4ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:39:06.113473"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:39:06.136142"], ["updated_at", "2023-07-19 16:39:06.136142"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (1.1ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:40:34.023266"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mOrder Delete All (1.4ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.6ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:40:45.180218"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:40:45.203506"], ["updated_at", "2023-07-19 16:40:45.203506"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mOrder Delete All (0.5ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:41:18.964035"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:41:18.986221"], ["updated_at", "2023-07-19 16:41:18.986221"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPromotion Load (0.4ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."order_id" = $1[0m  [["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"]]
+  [1m[36mOrder Delete All (1.4ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:41:41.646744"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:41:41.669919"], ["updated_at", "2023-07-19 16:41:41.669919"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPromotion Load (0.3ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."order_id" = $1[0m  [["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"]]
+  ↳ (rdbg)//Users/hamza/Documents/projects/actioncable-learning/db/seeds.rb:1:in `block in <main>'
+  [1m[36mDiscount Load (0.4ms)[0m  [1m[34mSELECT "discounts".* FROM "discounts" WHERE "discounts"."order_id" = $1[0m  [["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"]]
+  [1m[36mOrder Delete All (1.3ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:42:48.845101"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:42:48.868352"], ["updated_at", "2023-07-19 16:42:48.868352"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPromotion Load (0.3ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."order_id" = $1[0m  [["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"]]
+  [1m[36mOrder Delete All (1.3ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:43:07.846903"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:43:07.870033"], ["updated_at", "2023-07-19 16:43:07.870033"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPromotion Load (0.4ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."order_id" = $1[0m  [["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"]]
+  [1m[36mDiscount Load (0.4ms)[0m  [1m[34mSELECT "discounts".* FROM "discounts" WHERE "discounts"."order_id" = $1[0m  [["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.2ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["state", 0], ["created_at", "2021-04-14 13:17:25"], ["updated_at", "2023-07-19 16:43:07.888753"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita"], ["size", "Large"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:43:07.893375"], ["updated_at", "2023-07-19 16:43:07.893375"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Medium"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:43:07.898220"], ["updated_at", "2023-07-19 16:43:07.898220"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita"], ["size", "Small"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:43:07.902384"], ["updated_at", "2023-07-19 16:43:07.902384"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPromotion Load (0.3ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."order_id" = $1[0m  [["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"]]
+  [1m[36mDiscount Load (0.2ms)[0m  [1m[34mSELECT "discounts".* FROM "discounts" WHERE "discounts"."order_id" = $1[0m  [["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.2ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["state", 0], ["created_at", "2021-04-14 14:08:47"], ["updated_at", "2023-07-19 16:43:07.909371"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Medium"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:43:07.913372"], ["updated_at", "2023-07-19 16:43:07.913372"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:43:07.917425"], ["updated_at", "2023-07-19 16:43:07.917425"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:43:07.921298"], ["updated_at", "2023-07-19 16:43:07.921298"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:43:07.925103"], ["updated_at", "2023-07-19 16:43:07.925103"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:43:07.928837"], ["updated_at", "2023-07-19 16:43:07.928837"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mOrder Delete All (1.3ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.6ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:44:30.968042"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:44:30.991871"], ["updated_at", "2023-07-19 16:44:30.991871"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mOrder Delete All (1.3ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:44:59.193569"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:44:59.217229"], ["updated_at", "2023-07-19 16:44:59.217229"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mOrder Delete All (1.4ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.6ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:45:22.770417"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:45:22.795636"], ["updated_at", "2023-07-19 16:45:22.795636"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPromotion Load (0.4ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."order_id" = $1[0m  [["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"]]
+  [1m[36mOrder Delete All (1.4ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.6ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:45:43.061941"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:45:43.085150"], ["updated_at", "2023-07-19 16:45:43.085150"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPromotion Load (0.6ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."order_id" = $1[0m  [["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"]]
+  [1m[36mOrder Delete All (1.4ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:46:06.540584"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:46:06.562444"], ["updated_at", "2023-07-19 16:46:06.562444"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPromotion Load (0.4ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."order_id" = $1[0m  [["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"]]
+  [1m[36mDiscount Load (0.3ms)[0m  [1m[34mSELECT "discounts".* FROM "discounts" WHERE "discounts"."order_id" = $1[0m  [["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.2ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["state", 0], ["created_at", "2021-04-14 13:17:25"], ["updated_at", "2023-07-19 16:46:06.580618"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita"], ["size", "Large"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:46:06.584608"], ["updated_at", "2023-07-19 16:46:06.584608"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Medium"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:46:06.588466"], ["updated_at", "2023-07-19 16:46:06.588466"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita"], ["size", "Small"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:46:06.592158"], ["updated_at", "2023-07-19 16:46:06.592158"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPromotion Load (0.2ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."order_id" = $1[0m  [["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"]]
+  [1m[36mDiscount Load (0.2ms)[0m  [1m[34mSELECT "discounts".* FROM "discounts" WHERE "discounts"."order_id" = $1[0m  [["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (1.7ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["state", 0], ["created_at", "2021-04-14 14:08:47"], ["updated_at", "2023-07-19 16:46:06.598407"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Medium"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:46:06.604183"], ["updated_at", "2023-07-19 16:46:06.604183"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:46:06.608015"], ["updated_at", "2023-07-19 16:46:06.608015"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:46:06.611908"], ["updated_at", "2023-07-19 16:46:06.611908"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:46:06.615886"], ["updated_at", "2023-07-19 16:46:06.615886"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:46:06.619928"], ["updated_at", "2023-07-19 16:46:06.619928"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mOrder Delete All (1.4ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.7ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:48:58.158027"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:48:58.192484"], ["updated_at", "2023-07-19 16:48:58.192484"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mDiscount Load (0.3ms)[0m  [1m[34mSELECT "discounts".* FROM "discounts" WHERE "discounts"."order_id" = $1[0m  [["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.2ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["state", 0], ["created_at", "2021-04-14 13:17:25"], ["updated_at", "2023-07-19 16:48:58.206364"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita"], ["size", "Large"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:48:58.210611"], ["updated_at", "2023-07-19 16:48:58.210611"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Medium"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:48:58.215572"], ["updated_at", "2023-07-19 16:48:58.215572"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita"], ["size", "Small"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:48:58.219463"], ["updated_at", "2023-07-19 16:48:58.219463"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mDiscount Load (0.2ms)[0m  [1m[34mSELECT "discounts".* FROM "discounts" WHERE "discounts"."order_id" = $1[0m  [["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.2ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["state", 0], ["created_at", "2021-04-14 14:08:47"], ["updated_at", "2023-07-19 16:48:58.225784"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Medium"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:48:58.231224"], ["updated_at", "2023-07-19 16:48:58.231224"]]
+  [1m[36mTRANSACTION (40.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:48:58.276868"], ["updated_at", "2023-07-19 16:48:58.276868"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:48:58.283118"], ["updated_at", "2023-07-19 16:48:58.283118"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:48:58.287915"], ["updated_at", "2023-07-19 16:48:58.287915"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:48:58.292095"], ["updated_at", "2023-07-19 16:48:58.292095"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPromotion Load (0.4ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."name" = $1 LIMIT $2[0m  [["name", "2FOR1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPromotion Create (0.4ms)[0m  [1m[32mINSERT INTO "promotions" ("name", "target", "target_size", "from", "to", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "2FOR1"], ["target", nil], ["target_size", nil], ["from", nil], ["to", nil], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:48:58.311813"], ["updated_at", "2023-07-19 16:48:58.311813"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mOrder Delete All (1.4ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:50:09.748818"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:50:09.771318"], ["updated_at", "2023-07-19 16:50:09.771318"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mOrder Delete All (1.3ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:50:57.333516"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:50:57.414459"], ["updated_at", "2023-07-19 16:50:57.414459"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.2ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["state", 0], ["created_at", "2021-04-14 13:17:25"], ["updated_at", "2023-07-19 16:50:57.420193"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita"], ["size", "Large"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:50:57.424123"], ["updated_at", "2023-07-19 16:50:57.424123"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Medium"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:50:57.427879"], ["updated_at", "2023-07-19 16:50:57.427879"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita"], ["size", "Small"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:50:57.431518"], ["updated_at", "2023-07-19 16:50:57.431518"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.3ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["state", 0], ["created_at", "2021-04-14 14:08:47"], ["updated_at", "2023-07-19 16:50:57.435327"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Medium"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:50:57.439512"], ["updated_at", "2023-07-19 16:50:57.439512"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:50:57.443445"], ["updated_at", "2023-07-19 16:50:57.443445"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:50:57.447314"], ["updated_at", "2023-07-19 16:50:57.447314"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:50:57.450966"], ["updated_at", "2023-07-19 16:50:57.450966"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:50:57.454616"], ["updated_at", "2023-07-19 16:50:57.454616"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPromotion Load (0.4ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."name" = $1 LIMIT $2[0m  [["name", "2FOR1"], ["LIMIT", 1]]
+  [1m[36mOrder Delete All (1.6ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:51:17.484143"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:51:17.506196"], ["updated_at", "2023-07-19 16:51:17.506196"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.2ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["state", 0], ["created_at", "2021-04-14 13:17:25"], ["updated_at", "2023-07-19 16:51:17.510542"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita"], ["size", "Large"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:51:17.514434"], ["updated_at", "2023-07-19 16:51:17.514434"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Medium"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:51:17.518277"], ["updated_at", "2023-07-19 16:51:17.518277"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita"], ["size", "Small"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:51:17.522184"], ["updated_at", "2023-07-19 16:51:17.522184"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.3ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["state", 0], ["created_at", "2021-04-14 14:08:47"], ["updated_at", "2023-07-19 16:51:17.525959"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Medium"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:51:17.530162"], ["updated_at", "2023-07-19 16:51:17.530162"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:51:17.534175"], ["updated_at", "2023-07-19 16:51:17.534175"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:51:17.538203"], ["updated_at", "2023-07-19 16:51:17.538203"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:51:17.542129"], ["updated_at", "2023-07-19 16:51:17.542129"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:51:17.547503"], ["updated_at", "2023-07-19 16:51:17.547503"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPromotion Load (0.4ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."name" = $1 LIMIT $2[0m  [["name", "2FOR1"], ["LIMIT", 1]]
+  [1m[36mOrder Delete All (1.3ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.6ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:53:06.309446"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Large"], ["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["created_at", "2023-07-19 16:53:06.332327"], ["updated_at", "2023-07-19 16:53:06.332327"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.2ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["state", 0], ["created_at", "2021-04-14 13:17:25"], ["updated_at", "2023-07-19 16:53:06.337039"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita"], ["size", "Large"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:53:06.341287"], ["updated_at", "2023-07-19 16:53:06.341287"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tonno"], ["size", "Medium"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:53:06.345540"], ["updated_at", "2023-07-19 16:53:06.345540"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Margherita"], ["size", "Small"], ["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["created_at", "2023-07-19 16:53:06.349726"], ["updated_at", "2023-07-19 16:53:06.349726"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.2ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["state", 0], ["created_at", "2021-04-14 14:08:47"], ["updated_at", "2023-07-19 16:53:06.353666"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Medium"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:53:06.357831"], ["updated_at", "2023-07-19 16:53:06.357831"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:53:06.361963"], ["updated_at", "2023-07-19 16:53:06.361963"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:53:06.366391"], ["updated_at", "2023-07-19 16:53:06.366391"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:53:06.372779"], ["updated_at", "2023-07-19 16:53:06.372779"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "size", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Salami"], ["size", "Small"], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:53:06.377581"], ["updated_at", "2023-07-19 16:53:06.377581"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPromotion Load (0.5ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."name" = $1 LIMIT $2[0m  [["name", "2FOR1"], ["LIMIT", 1]]
+  [1m[36mDiscount Load (0.6ms)[0m  [1m[34mSELECT "discounts".* FROM "discounts" WHERE "discounts"."name" = $1 LIMIT $2[0m  [["name", "SAVE5"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDiscount Create (0.4ms)[0m  [1m[32mINSERT INTO "discounts" ("name", "deduction_in_percent", "order_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "SAVE5"], ["deduction_in_percent", nil], ["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["created_at", "2023-07-19 16:53:06.419081"], ["updated_at", "2023-07-19 16:53:06.419081"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (1.0ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 16:53:12.288430"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  [1m[36mOrder Count (2.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "orders"[0m
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" ORDER BY "orders"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDiscount Load (0.3ms)[0m  [1m[34mSELECT "discounts".* FROM "discounts" WHERE "discounts"."order_id" = $1[0m  [["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["LIMIT", 1]]
+  [1m[36mDiscount Load (0.4ms)[0m  [1m[34mSELECT "discounts".* FROM "discounts" WHERE "discounts"."order_id" = $1[0m  [["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"]]
+  [1m[36mOrder Delete All (1.6ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 AND "orders"."state" = $2 AND "orders"."created_at" = $3 LIMIT $4[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 17:18:53.140068"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."order_id" = $1 AND "items"."name" = $2 AND "items"."size" = $3 LIMIT $4[0m  [["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["name", "Tonno"], ["size", "Large"], ["LIMIT", 1]]
+  [1m[36mOrder Delete All (1.6ms)[0m  [1m[31mDELETE FROM "orders"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 AND "orders"."state" = $2 AND "orders"."created_at" = $3 LIMIT $4[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["state", 0], ["created_at", "2021-04-14 11:16:00"], ["updated_at", "2023-07-19 17:22:37.880367"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."order_id" = $1 AND "items"."name" = $2 AND "items"."size" = $3 LIMIT $4[0m  [["order_id", "316c6832-e038-4599-bc32-2b0bf1b9f1c1"], ["name", "Tonno"], ["size", "Large"], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 AND "orders"."state" = $2 AND "orders"."created_at" = $3 LIMIT $4[0m  [["id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["state", 0], ["created_at", "2021-04-14 13:17:25"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.3ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["state", 0], ["created_at", "2021-04-14 13:17:25"], ["updated_at", "2023-07-19 17:22:37.907673"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."order_id" = $1 AND "items"."name" = $2 AND "items"."size" = $3 LIMIT $4[0m  [["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["name", "Margherita"], ["size", "Large"], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."order_id" = $1 AND "items"."name" = $2 AND "items"."size" = $3 LIMIT $4[0m  [["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["name", "Tonno"], ["size", "Medium"], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."order_id" = $1 AND "items"."name" = $2 AND "items"."size" = $3 LIMIT $4[0m  [["order_id", "f40d59d0-48bd-409a-ac7b-54a1b47f6680"], ["name", "Margherita"], ["size", "Small"], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 AND "orders"."state" = $2 AND "orders"."created_at" = $3 LIMIT $4[0m  [["id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["state", 0], ["created_at", "2021-04-14 14:08:47"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Create (0.2ms)[0m  [1m[32mINSERT INTO "orders" ("id", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["state", 0], ["created_at", "2021-04-14 14:08:47"], ["updated_at", "2023-07-19 17:22:37.919211"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."order_id" = $1 AND "items"."name" = $2 AND "items"."size" = $3 LIMIT $4[0m  [["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["name", "Salami"], ["size", "Medium"], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."order_id" = $1 AND "items"."name" = $2 AND "items"."size" = $3 LIMIT $4[0m  [["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["name", "Salami"], ["size", "Small"], ["LIMIT", 1]]
+  [1m[36mCACHE Item Load (0.0ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."order_id" = $1 AND "items"."name" = $2 AND "items"."size" = $3 LIMIT $4[0m  [["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["name", "Salami"], ["size", "Small"], ["LIMIT", 1]]
+  [1m[36mCACHE Item Load (0.0ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."order_id" = $1 AND "items"."name" = $2 AND "items"."size" = $3 LIMIT $4[0m  [["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["name", "Salami"], ["size", "Small"], ["LIMIT", 1]]
+  [1m[36mCACHE Item Load (0.0ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."order_id" = $1 AND "items"."name" = $2 AND "items"."size" = $3 LIMIT $4[0m  [["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["name", "Salami"], ["size", "Small"], ["LIMIT", 1]]
+  [1m[36mPromotion Load (0.4ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."order_id" = $1 AND "promotions"."name" = $2 LIMIT $3[0m  [["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["name", "2FOR1"], ["LIMIT", 1]]
+  [1m[36mDiscount Load (0.4ms)[0m  [1m[34mSELECT "discounts".* FROM "discounts" WHERE "discounts"."order_id" = $1 AND "discounts"."name" = $2 LIMIT $3[0m  [["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["name", "SAVE5"], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["LIMIT", 1]]
+  [1m[36mDiscount Load (0.4ms)[0m  [1m[34mSELECT "discounts".* FROM "discounts" WHERE "discounts"."order_id" = $1[0m  [["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"]]
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = $1 LIMIT $2[0m  [["id", "9232679d-e3fd-40bd-81f4-7114ea96e420"], ["LIMIT", 1]]
+  [1m[36mPromotion Load (0.4ms)[0m  [1m[34mSELECT "promotions".* FROM "promotions" WHERE "promotions"."order_id" = $1[0m  [["order_id", "9232679d-e3fd-40bd-81f4-7114ea96e420"]]
