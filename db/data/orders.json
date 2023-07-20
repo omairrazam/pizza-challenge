@@ -1,0 +1,105 @@
+[
+  {
+    "id": "316c6832-e038-4599-bc32-2b0bf1b9f1c1",
+    "state": "OPEN",
+    "createdAt": "2021-04-14T11:16:00Z",
+    "items": [
+      {
+        "name": "Tonno",
+        "size": "Large",
+        "price": "8",
+        "add": [],
+        "remove": []
+      }
+    ],
+    "promotionCodes": [],
+    "discountCode": null
+  },
+  {
+    "id": "f40d59d0-48bd-409a-ac7b-54a1b47f6680",
+    "state": "OPEN",
+    "createdAt": "2021-04-14T13:17:25Z",
+    "items": [
+      {
+        "name": "Margherita",
+        "size": "Large",
+        "price": "5",
+        "add": ["Onions", "Cheese", "Olives"],
+        "remove": []
+      },
+      {
+        "name": "Tonno",
+        "size": "Medium",
+        "add": [],
+        "price": "8",
+        "remove": ["Onions", "Olives"]
+      },
+      {
+        "name": "Margherita",
+        "size": "Small",
+        "add": [],
+        "price": "5",
+        "remove": []
+      }
+    ],
+    "promotionCodes": [],
+    "discountCode": null
+  },
+  {
+    "id": "9232679d-e3fd-40bd-81f4-7114ea96e420",
+    "state": "OPEN",
+    "createdAt": "2021-04-14T14:08:47Z",
+    "items": [
+      {
+        "name": "Salami",
+        "size": "Medium",
+        "price": "6",
+        "add": ["Onions"],
+        "remove": ["Cheese"]
+      },
+      {
+        "name": "Salami",
+        "size": "Small",
+        "price": "6",
+        "add": [],
+        "remove": []
+      },
+      {
+        "name": "Salami",
+        "size": "Small",
+        "price": "6",
+        "add": [],
+        "remove": []
+      },
+      {
+        "name": "Salami",
+        "size": "Small",
+        "price": "6",
+        "add": [],
+        "remove": []
+      },
+      {
+        "name": "Salami",
+        "size": "Small",
+        "price": "6",
+        "add": ["Olives"],
+        "remove": []
+      }
+    ],
+    "promotionCodes": ["2FOR1"],
+    "promotions":{
+      "2FOR1":{
+        "target": "Salami",
+        "target_size": "Small",
+        "from": 2,
+        "to": 1
+      }
+    },
+    "discountCode": "SAVE5",
+    "discounts": {
+      "SAVE5": {
+        "deduction_in_percent": 5
+      }
+    }
+  }
+]

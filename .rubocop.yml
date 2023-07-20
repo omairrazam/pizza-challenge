@@ -27,6 +27,7 @@ AllCops:
     - storefront/**/*
     - spree-storefront-api-v2-sdk/**/*
     - tmp/**/*
+    - db/seeds.rb
 
 Bundler/OrderedGems:
   Enabled: false
