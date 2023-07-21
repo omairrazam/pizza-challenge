@@ -61,7 +61,7 @@ group :development, :test do
   gem "bundler-audit", require: false
   gem "pry"
   gem "bullet"
-  gem 'factory_bot_rails'
+  gem "factory_bot_rails"
 end
 
 group :development do

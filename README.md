@@ -23,6 +23,7 @@ application up and running.
     1. postgres 9.6 `https://postgresapp.com/downloads.html`
     2. chromedriver for tests `brew install cask chromedriver` - need to find respective command for ubuntu
     3. if chromedriver is already installed then you might get old version error, in that case please reinstall `brew uninstall chromedriver` and then repeat step 2.
+
     
 * System Setup (installing dependencies + database setup + migration + seeds)
 
