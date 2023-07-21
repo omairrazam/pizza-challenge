@@ -1,0 +1,17 @@
+<div class="flex flex-col grow">
+  <h1>Items</h1>
+  <ul class="list-disc">
+    <% order.items.each do |item| %>
+      <li><%= item.name %> (<%= item.size %>)</li>
+      <ul class="pl-5 mt-2 space-y-1 list-circle list-inside">
+        <% if item.add_special_requests.present? %>
+          <li><%= "Add: #{item.add_special_requests.map(&:capitalize).join(',')}" %></li>
+        <% end %>
+        
+        <% if item.remove_special_requests.present? %>
+          <li><%= "Remove: #{item.remove_special_requests.map(&:capitalize).join(',')}" %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  </ul>
+</div>
