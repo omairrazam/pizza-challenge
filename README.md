@@ -32,7 +32,10 @@ application up and running.
 
     `bin/dev`
 
+* Visit
 
+    `http://localhost:3000/orders`
+    
 * How to run the test suite
 
     `rspec`
