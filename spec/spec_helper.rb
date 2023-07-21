@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "spec_helper"
-require 'webdrivers'
+require "webdrivers"
 
 ENV["RAILS_ENV"] ||= "test"
 require File.expand_path("../config/environment", __dir__)
@@ -15,7 +15,7 @@ Capybara.register_driver :selenium do |app|
 end
 
 Capybara.javascript_driver = :selenium
-Webdrivers::Chromedriver.required_version = '114.0.5735.90'
+Webdrivers::Chromedriver.required_version = "114.0.5735.90"
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

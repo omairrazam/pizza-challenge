@@ -7,7 +7,7 @@ RSpec.describe "Orders", type: :system do
     driven_by :selenium, using: :headless_chrome
   end
 
-  context 'On orders listing page ensure' do
+  context "On orders listing page ensure" do
     it "should display all required fields" do
       order = FactoryBot.create(:order)
       visit "/orders"
@@ -30,7 +30,7 @@ RSpec.describe "Orders", type: :system do
       end
     end
 
-    it 'removes items from list after clicking Complete order button on an item', turbo_stream: true do
+    it "removes items from list after clicking Complete order button on an item", turbo_stream: true do
       FactoryBot.create(:order)
       visit "/orders"
 
