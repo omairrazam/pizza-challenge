@@ -1,4 +1,0 @@
-0000000000000000000000000000000000000000 c6465376a1fa97ec37449a3d5c38d0604895ce4f omairazam <omairr.azam@gmail.com> 1689882447 +0500	branch: Created from HEAD
-c6465376a1fa97ec37449a3d5c38d0604895ce4f b9b672a8a82ca08a719b0d7e7d6fff711c60ed6f omairazam <omairr.azam@gmail.com> 1689882456 +0500	commit: temp
-b9b672a8a82ca08a719b0d7e7d6fff711c60ed6f 2634dc5875eea05d78a86a6ab6c0b855367ce723 omairazam <omairr.azam@gmail.com> 1689883012 +0500	rebase -i (finish): refs/heads/tmp onto b2a1c15c5b17ddf706f671f2d4f0570d1ea295c8
-2634dc5875eea05d78a86a6ab6c0b855367ce723 b2a1c15c5b17ddf706f671f2d4f0570d1ea295c8 omairazam <omairr.azam@gmail.com> 1689883023 +0500	reset: moving to HEAD~1
