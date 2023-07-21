@@ -1,0 +1,22 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = git@github.com:omairrazam/pizza-challenge.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "om"]
+	url = git@git-op:om-ma/pizza-challenge.git
+	fetch = +refs/heads/*:refs/remotes/om/*
+[branch "master"]
+	remote = om
+	merge = refs/heads/master
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[branch "feat/orders-listing"]
+	remote = origin
+	merge = refs/heads/feat/orders-listing

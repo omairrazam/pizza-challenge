@@ -1,0 +1,14 @@
+{
+  "name": "pizza",
+  "version": "1.0.0",
+  "description": "pizza challenge",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "semantic-release": "^21.0.2"
+  },
+  "release": {
+    "branches": ["main"],
+    "npmPublish": false
+  }
+}
