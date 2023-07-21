@@ -3,6 +3,8 @@
 class TwoForOnePromotion < ApplicationRecord
   PROMOTION_SIZE = 2
 
+  belongs_to :order 
+
   def eligible?(item)
     item.name == target && item.size == target_size
   end
