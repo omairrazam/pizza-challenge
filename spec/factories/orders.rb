@@ -2,10 +2,31 @@
 
 FactoryBot.define do
   factory :order do
+    state{ "open" }
+    created_at{ Time.current }
+  end
+
+  factory :order_with_items, parent: :order do
+    after(:create) do |order, _evaluator|
+      create(:item_margherita, order: order)
+      create(:item_salami, order: order)
+      create(:item_tonno, order: order)
+    end
+  end
+
+  factory :order_with_special_items, parent: :order do
+    after(:create) do |order, _evaluator|
+      create(:item_margherita_special_large, order: order)
+      create(:item_tonno_medium_special_remove, order: order)
+      create(:item_margherita, order: order)
+    end
+  end
+
+  factory :order_with_promotion_discount, parent: :order do
     transient do
       order_data do
         {
-          "state" => "OPEN",
+          "state" => "open",
           "createdAt" => "2021-04-14T14:08:47Z",
           "items" => [
             {
@@ -63,31 +84,28 @@ FactoryBot.define do
       end
     end
 
-    sequence(:id){ |n| "f40d59d0-48ad-409a-ac7b-54a1b47f668#{n}" }
-    state{ "open" }
-    created_at{ Time.current }
-
     after(:create) do |order, evaluator|
       order_data = evaluator.order_data
       order.items.delete_all if order.items.present?
 
       order_data["items"]&.each do |item_data|
         order.items.create!(
-          name: item_data["name"] || "Dummy Item",
-          size: item_data["size"]&.downcase || "small",
-          price: item_data["price"] || 10.0,
-          add_special_requests: item_data["add"]&.map(&:downcase) || [],
-          remove_special_requests: item_data["remove"]&.map(&:downcase) || [],
+          name: item_data["name"],
+          size: item_data["size"]&.downcase,
+          price: item_data["price"],
+          add_special_requests: item_data["add"]&.map(&:downcase),
+          remove_special_requests: item_data["remove"]&.map(&:downcase),
         )
       end
 
       order_data["promotionCodes"]&.each do |promotion_code|
         next if promotion_code.blank?
 
-        target = order_data["promotions"][promotion_code]["target"] || "Dummy Target"
-        target_size = order_data["promotions"][promotion_code]["target_size"]&.downcase || "small"
-        from = order_data["promotions"][promotion_code]["from"] || Time.current
-        to = order_data["promotions"][promotion_code]["to"] || 1.week.from_now
+        target = order_data["promotions"][promotion_code]["target"]
+        target_size = order_data["promotions"][promotion_code]["target_size"]&.downcase
+        from = order_data["promotions"][promotion_code]["from"]
+        to = order_data["promotions"][promotion_code]["to"]
+
         promotion_calculator = FactoryBot.create(:two_for_one_promotion,
                                                  code: promotion_code,
                                                  target: target,

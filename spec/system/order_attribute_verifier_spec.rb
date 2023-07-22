@@ -9,7 +9,7 @@ RSpec.describe "Orders", type: :system do
 
   context "On orders listing page ensure" do
     it "should display all required fields" do
-      order = FactoryBot.create(:order)
+      order = FactoryBot.create(:order_with_promotion_discount)
       visit "/orders"
 
       expect(page).to have_content("ID: #{order.id}")
