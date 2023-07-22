@@ -15,7 +15,12 @@ class ItemPriceCalculator
 
   private
 
+  def validate_size!
+    raise NoMethodError unless Item::SIZE_MULTIPLIERS.key?(size.to_sym)
+  end
+
   def final_price
+    validate_size!
     price_by_size.round(2) + ingredients_price.round(2)
   end
 
