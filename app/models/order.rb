@@ -11,6 +11,8 @@ class Order < ApplicationRecord
   has_many :promotions, dependent: :destroy
   has_many :discounts, dependent: :destroy
 
+  validates :state, inclusion: { in: %w[open closed processing] }
+
   def calculate_total_price
     OrderPriceCalculator.new(self).execute
   end
