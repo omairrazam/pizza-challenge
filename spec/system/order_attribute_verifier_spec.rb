@@ -11,7 +11,6 @@ RSpec.describe "Orders", type: :system do
     it "should display all required fields" do
       order = FactoryBot.create(:order_with_promotion_discount)
       visit "/orders"
-
       expect(page).to have_content("ID: #{order.id}")
       expect(page).to have_content("Created: #{order.created_at.strftime("%Y-%m-%d %H:%M:%S")}")
       expect(page).to have_content("Total Price: #{order.calculate_total_price}")
@@ -31,7 +30,7 @@ RSpec.describe "Orders", type: :system do
     end
 
     it "removes items from list after clicking Complete order button on an item", turbo_stream: true do
-      FactoryBot.create(:order)
+      FactoryBot.create(:order_with_promotion_discount)
       visit "/orders"
 
       within "#orders_list" do

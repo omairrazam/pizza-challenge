@@ -1,6 +1,6 @@
 <%= turbo_frame_tag dom_id(order) do %>
   <% if order.errors.present? %>
-    <h1>Error: <%= order.errors.count %></h1>
+    <h1 id="error-<%= order.id %>">Error: <%= order.errors.count %></h1>
   <% end %>
   
   <div class="flex grow mb-10 pb-2 border-b-2 order_item" id="<%= order.id %>">

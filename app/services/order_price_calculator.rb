@@ -18,7 +18,7 @@ class OrderPriceCalculator
   private
 
   def apply_promotions
-    return if promotions.blank?
+    return if promotions.joins(:calculator).blank?
 
     promotions.each(&:calculate)
   end
