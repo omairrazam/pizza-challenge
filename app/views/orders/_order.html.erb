@@ -1,0 +1,19 @@
+<%= turbo_frame_tag dom_id(order) do %>
+  <% if order.errors.present? %>
+    <h1 id="error-<%= order.id %>">Error: <%= order.errors.count %></h1>
+  <% end %>
+  
+  <div class="flex grow mb-10 pb-2 border-b-2 order_item" id="<%= order.id %>">
+    <div class="flex flex-col grow mr-10">
+      <p>ID: <%= order.id %></p>
+      <p>Created: <%= order.created_at.strftime("%Y-%m-%d %H:%M:%S") %></p>
+      <p>Promotion Codes: <%= order.promotions.pluck(:name).join(', ').presence || '-' %></p>
+      <p>Discount Codes: <%= order.discounts.pluck(:name).join(', ').presence || '-' %></p>
+      
+      <p>Total Price: <%= price_with_currency(order.calculate_total_price) %></p>
+      <%= button_to "Complete Order", order_path(order), method: :patch, class: "complete-order-button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+    </div>
+    <%= render partial: 'items', locals: {order: order} %>
+  </div>
+<% end %>
+
